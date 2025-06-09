@@ -1,0 +1,280 @@
+/*BARRA DE NAVEGACION*/
+nav {
+    position: fixed;
+    left: 8px;
+    right: 8px;
+    border-radius: 10px;
+    padding: 10px 50px;
+    background-color: #be9052;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    z-index: 1;
+    /* Asegura que la barra de navegación esté siempre encima */
+}
+
+.logo {
+    color: white;
+    width: 20vh;
+}
+
+.logo img {
+    height: 10vh;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 30px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #664609;
+}
+
+/* Botón hamburguesa (solo visible en móviles) */
+.hamburguesa {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        background-color: #be9052;
+        position: absolute;
+        top: 66px;
+        right: 0;
+        width: 30%;
+        padding: 20px;
+        border-radius: 20px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+
+    .menu.mostrar {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+    }
+
+    .hamburguesa {
+        display: block;
+
+    }
+
+    .hamburguesa:hover {
+        color: #664609;
+    }
+}
+
+/*IMAGEN PRINCIPAL HOTEL*/
+.imagenPrincipal {
+    width: 100%;
+    height: 97%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/*SECCION PROMO*/
+.imagenpromocolor {
+    background-color: #ffffff;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.imagen-promo {
+    width: 300px;
+    height: 250px;
+}
+
+/*SECCION RESEÑA*/
+.carrucelcolor {
+    background-color: #ffffff;
+}
+
+.texto {
+    text-align: center;
+    font-family: 'Segoe UI';
+}
+
+#carrucelReseñas {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.review-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    height: 100%;
+}
+
+.review-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.parrafoReseña {
+    font-family: 'Segoe UI';
+    font-size: 14;
+}
+
+.banderas {
+    vertical-align: middle;
+    width: 24px;
+    height: auto;
+}
+
+/*.footer{
+    background-color: #e27c2e;
+    padding: 100px;
+}*/
+
+/*HABITACIONES*/
+html {
+    font-family: 'Montserrat';
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #ffffff;
+}
+
+/*SECCION INTRO*/
+.intro {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    background-color: #fff6e8;
+    border-radius: 10px;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.filtros {
+    margin-top: 20px;
+    margin-bottom: -30px;
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+form-filtro {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*SECCION HABITACIONES*/
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px;
+    transition: transform 0.3s ease;
+}
+
+.card {
+    background-color: #fff5e9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.03);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*HABITACION DETALLE*/
+.enlace:hover {
+    filter: brightness(0.9) !important;
+    transition: filter 0.3s ease;
+}
+
+/*SECCION*/
+.carrusel {
+    margin-top: 0;
+    margin-bottom: 2vh;
+}
+
+.carrusel-img {
+    height: 20%;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/*SERVICIOS*/
+/*SECCION TEXTO Y CARRUCEL*/
+.titulo {
+    text-align: left;
+    font-family: 'Segoe UI';
+}
+
+.sectionservi {
+    background-color: #ffffff;
+}
+
+.spatexto {
+    font-family: 'Franklin Gothic Medium';
+    font-size: 16;
+}
+
+.movil {
+    display: none;
+}
+
+@media (max-width: 720px) {
+    .escritorio {
+        display: none;
+    }
+
+    .movil {
+        display: block;
+    }
+}

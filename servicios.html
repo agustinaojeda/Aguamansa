@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aguamansa - Servicios</title>
+    <link rel="icon" href="icon.png" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="javascript.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="#">
+          <img
+            src="https://hsol.com.ar/pms/hotels/aguamansa/feedaguamansa-07.png"
+            alt=""
+          />
+        </a>
+      </div>
+
+      <div class="hamburguesa" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="menu" id="menu">
+        <a href="paginaprincipal.html">
+          <i class="fa-solid fa-house"></i> Inicio</a
+        >
+        <a href="habitaciones.html">
+          <i class="fa-solid fa-door-open"></i> Habitaciones</a
+        >
+        <a href="servicios.html"> <i class="fa-solid fa-star"></i> Servicios</a>
+      </div>
+    </nav>
+    <br />
+    <div class="sectionservi container" style="margin-top: 100px">
+      <div class="row">
+        <h3 class="titulo">Servicios</h3>
+        <br />
+        <div class="spatexto col-sm-6">
+          <h4>Spa</h4>
+          <p>
+            Sumergete en un oasis de tranquilidad en nuestro exclusivo spa.
+            Diseñado para renovar cuerpo, mente y espíritu, ofrecemos una
+            experiencia sensorial completa con tratamientos personalizados,
+            masajes relajantes, sauna, baño turco y jacuzzi.
+          </p>
+          <p>
+            Nuestros terapeutas profesionales utilizan productos naturales y
+            técnicas de relajación para garantizar tu bienestar total. Disfruta
+            de un ambiente sereno con aromas suaves, música relajante y un
+            servicio de primera clase.
+          </p>
+          <p>
+            Ya sea que busques un momento de paz o de experiencia revitalizante,
+            el spa de nuestro hotel es el lugar perfecto para desconectar y
+            recargar energías.
+          </p>
+        </div>
+        <br />
+        <div class="col-sm-6">
+          <br />
+          <div id="carrucelSpa" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://images.unsplash.com/photo-1529290130-4ca3753253ae?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="d-block w-100"
+                  width="450"
+                  height="350"
+                  alt="spa1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://images.unsplash.com/photo-1672983665896-e02f28d14173?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="d-block w-100"
+                  width="450"
+                  height="350"
+                  alt="spa2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://images.unsplash.com/photo-1583417657209-d3dd44dc9c09?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="d-block w-100"
+                  width="450"
+                  height="350"
+                  alt="spa3"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carrucelSpa"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carrucelSpa"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <br />
+        <div class="col-sm-6">
+          <br />
+          <div
+            id="carrucelBuffet"
+            class="carousel slide escritorio"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://images.unsplash.com/photo-1677129663116-9ee340fb9797?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="d-block w-100"
+                  width="450"
+                  height="350"
+                  alt="buffet1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1722859296314-b7b7a5ea95c9?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="d-block w-100"
+                  width="450"
+                  height="350"
+                  alt="buffet2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1723795410688-4165e31bd01e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="d-block w-100"
+                  width="450"
+                  height="350"
+                  alt="buffet3"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carrucelBuffet"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carrucelBuffet"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <br />
+        <div class="spatexto col-sm-6">
+          <br />
+          <h4>Buffet</h4>
+          <p>
+            Descubre una experiencia gastronómica sin igual en nuestro buffet
+            internacional. Cada día ofrecemos una amplia selección de platos
+            frescos y deliciosos, preparados por chef expertos con ingredientes
+            de la más alta calidad.
+          </p>
+          <p>
+            Dsifruta de una variedad de opciones que van desde cocina local
+            tradicional hasta sabores exóticos del mundo, incluyendo estaciones
+            en vivo, opciones vegetarianas, postres artesanales y mucho más.
+          </p>
+          <p>
+            Nuestro ambiente acogedor y el servicio atento hacen del buffet el
+            lugar ideal para desayunos energéticos, almuerzos variados y cenas
+            memoriables. ¡Un festín para todos los gustos!
+          </p>
+        </div>
+        <div class="col-sm-6 movil">
+          <br />
+          <div
+            id="carrucelBuffet"
+            class="carousel slide movil"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://images.unsplash.com/photo-1677129663116-9ee340fb9797?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="d-block w-100"
+                  width="450"
+                  height="350"
+                  alt="buffet1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1722859296314-b7b7a5ea95c9?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="d-block w-100"
+                  width="450"
+                  height="350"
+                  alt="buffet2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1723795410688-4165e31bd01e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="d-block w-100"
+                  width="450"
+                  height="350"
+                  alt="buffet3"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carrucelBuffet"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carrucelBuffet"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <br />
+        <div class="spatexto col-sm-6">
+          <br />
+          <h4>Estacionamiento</h4>
+          <p>
+            Para tu comodidad y tranquilidad, nuestro hotel cuenta con
+            Estacionamientos privado disponible las 24 horas del día. El acceso
+            es seguro, con vigilancia constante y fácil entrada desde la avenida
+            principal.
+          </p>
+          <p>
+            Ofrecemos espacios amplios para autos, motocicletas y vehículos de
+            gran tamaño, así como zonas designadas para personas con movilidad
+            reducida.
+          </p>
+          <p>
+            El servicio de estacionamiento es gratuito para nuestros huéspedes
+            registrados. Si vienes de visita, también contamos con opciones de
+            pago por hora o por día.
+          </p>
+        </div>
+        <br />
+        <div class="col-sm-6">
+          <br />
+          <div
+            id="carrucelEstacionamiento"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1724766409757-340b71bc798f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="d-block w-100"
+                  width="450"
+                  height="350"
+                  alt="estacionamiento1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://images.unsplash.com/photo-1561436574-2d9d9968f2fb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="d-block w-100"
+                  width="450"
+                  height="350"
+                  alt="estacionamiento2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://media.istockphoto.com/id/2150811348/photo/a-parking-garage-with-a-red-and-white-barrier.jpg?s=2048x2048&w=is&k=20&c=e-P-3Ee-lKXXoU1uvgt_xxkxkojT3Cb4t3e_OT-Hm34="
+                  class="d-block w-100"
+                  width="450"
+                  height="350"
+                  alt="estacionamiento3"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carrucelEstacionamiento"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carrucelEstacionamiento"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <footer class="bg-dark text-white pt-4 pb-2 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <h5>Ubicación</h5>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1080.6334744653893!2d-66.34573996359256!3d-33.299624059256374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7accb26d5af87%3A0x23bdd050a35f7327!2sGRAN%20HOTEL%20SAN%20LUIS%20GOLD!5e0!3m2!1ses-419!2sar!4v1748892857797!5m2!1ses-419!2sar"
+              width="100%"
+              height="230"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <h5>Contacto</h5>
+            <form>
+              <div class="mb-2">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Tu nombre"
+                />
+              </div>
+              <div class="mb-2">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Tu correo"
+                />
+              </div>
+              <div class="mb-2">
+                <textarea
+                  class="form-control"
+                  rows="3"
+                  placeholder="Mensaje"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-outline-light">
+                Enviar
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col text-center">
+            <img
+              src="https://hsol.com.ar/pms/hotels/aguamansa/feedaguamansa-07.png"
+              alt="Logo"
+              style="max-height: 80px"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

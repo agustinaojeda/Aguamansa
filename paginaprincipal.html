@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aguamansa</title>
+    <link rel="icon" href="icon.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="javascript.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="#">
+          <img
+            src="https://hsol.com.ar/pms/hotels/aguamansa/feedaguamansa-07.png"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="hamburguesa" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="menu" id="menu">
+        <a href="paginaprincipal.html">
+          <i class="fa-solid fa-house"></i> Inicio</a
+        >
+        <a href="habitaciones.html">
+          <i class="fa-solid fa-door-open"></i> Habitaciones</a
+        >
+        <a href="servicios.html"> <i class="fa-solid fa-star"></i> Servicios</a>
+      </div>
+    </nav>
+
+    <div class="imagenPrincipal">
+      <div class="row">
+        <div class="col-sm-12">
+          <img
+            src="https://images.unsplash.com/photo-1667125094717-47e0ff6d0608?q=80&w=1463&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="imagenPrincipal img-fluid"
+            alt="hotelprincipal"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="imagenpromocolor container">
+      <div class="row text-center">
+        <h3 class="mb-4 texto">Promociones</h3>
+        <br />
+        <div class="col-md-4">
+          <img
+            src="./imagen promo desayuno.jpeg"
+            class="img-fluid rounded imagen-promo"
+            alt="promo1"
+          />
+        </div>
+        <div class="col-md-4">
+          <img
+            src="./imagen promo reserva.jpeg"
+            class="img-fluid rounder imagen-promo"
+            alt="promo2"
+          />
+        </div>
+        <div class="col-md-4">
+          <img
+            src="./imagen promo niños.jpeg"
+            class="img-fluid rounder imagen-promo"
+            alt="promo3"
+          />
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="carrucelcolor container">
+      <h3 class="mb-4 texto">Reseñas de Clientes</h3>
+      <div class="row">
+        <div
+          id="carrucelReseñas"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row justify-content-center">
+                <div class="col-md-4">
+                  <div class="review-card">
+                    <div class="d-flex-aling-items-center mb-2">
+                      <div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-person-square"
+                          viewBox="0 0 16 16"
+                        >
+                          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                          <path
+                            d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"
+                          />
+                        </svg>
+                        <strong>Antonela Gómez</strong><br /><small
+                          ><img
+                            src="https://flagcdn.com/w40/ar.png"
+                            class="banderas"
+                            alt="Argentina"
+                          />
+                          Argentina</small
+                        ><br />
+                        <span style="color: gold">★★★★★</span>
+                      </div>
+                    </div>
+                    <p class="parrafoReseña">
+                      "Las instalaciones en perfecto estado, todo de buena
+                      calidad.¡La atención fue excelente!."
+                    </p>
+                    <small>Publicado en enero 2025</small>
+                  </div>
+                </div>
+                <div class="col-md-4 d-none d-md-block">
+                  <div class="review-card">
+                    <div class="d-flex-aling-items-center mb-2">
+                      <div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-person-square"
+                          viewBox="0 0 16 16"
+                        >
+                          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                          <path
+                            d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"
+                          />
+                        </svg>
+                        <strong>Mateo Muñoz</strong><br /><small
+                          ><img
+                            src="https://flagcdn.com/w40/cl.png"
+                            class="banderas"
+                            alt="Chile"
+                          />
+                          Chile</small
+                        ><br />
+                        <span style="color: gold">★★★★★</span>
+                      </div>
+                    </div>
+                    <p class="parrafoReseña">
+                      "Bien ubicado, servicios básicos, buena cochera, y
+                      desayuno excelente. Para una noche, más que bien."
+                    </p>
+                    <small>Publicado en febrero 2025</small>
+                  </div>
+                </div>
+                <div class="col-md-4 d-none d-md-block">
+                  <div class="review-card">
+                    <div class="d-flex-aling-items-center mb-2">
+                      <div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-person-square"
+                          viewBox="0 0 16 16"
+                        >
+                          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                          <path
+                            d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"
+                          />
+                        </svg>
+                        <strong>Sara Martins</strong><br /><small
+                          ><img
+                            src="https://flagcdn.com/w40/br.png"
+                            class="banderas"
+                            alt="Brasil"
+                          />
+                          Brasil</small
+                        ><br />
+                        <span style="color: gold">★★★★★</span>
+                      </div>
+                    </div>
+                    <p class="parrafoReseña">
+                      "Súper amable el personal. Llegamos de noche y descansamos
+                      perfecto. Lugar muy cómodo."
+                    </p>
+                    <small>Publicado en marzo 2025</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-md-4">
+                  <div class="review-card">
+                    <div class="d-flex-aling-items-center mb-2">
+                      <div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-person-square"
+                          viewBox="0 0 16 16"
+                        >
+                          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                          <path
+                            d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"
+                          />
+                        </svg>
+                        <strong>Adrián García</strong><br /><small
+                          ><img
+                            src="https://flagcdn.com/w40/es.png"
+                            class="banderas"
+                            alt="España"
+                          />
+                          España</small
+                        ><br />
+                        <span style="color: gold">★★★★★</span>
+                      </div>
+                    </div>
+                    <p class="parrafoReseña">
+                      "Una experiencia inolvidable. Desde el momento en que
+                      llegamos, el personal fue increíblemente atento."
+                    </p>
+                    <small>Publicado en abril 2025</small>
+                  </div>
+                </div>
+                <div class="col-md-4 d-none d-md-block">
+                  <div class="review-card">
+                    <div class="d-flex-aling-items-center mb-2">
+                      <div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-person-square"
+                          viewBox="0 0 16 16"
+                        >
+                          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                          <path
+                            d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"
+                          />
+                        </svg>
+                        <strong>Camila Reyes</strong><br /><small
+                          ><img
+                            src="https://flagcdn.com/w40/pe.png"
+                            class="banderas"
+                            alt="Peru"
+                          />
+                          Peru</small
+                        ><br />
+                        <span style="color: gold">★★★★★</span>
+                      </div>
+                    </div>
+                    <p class="parrafoReseña">
+                      "Excelente ubicación, instalaciones de primer nivel y un
+                      spa que supera todas las expectativas."
+                    </p>
+                    <small>Publicado en mayo 2025</small>
+                  </div>
+                </div>
+                <div class="col-md-4 d-none d-md-block">
+                  <div class="review-card">
+                    <div class="d-flex-aling-items-center mb-2">
+                      <div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-person-square"
+                          viewBox="0 0 16 16"
+                        >
+                          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                          <path
+                            d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"
+                          />
+                        </svg>
+                        <strong>Jean Dupont</strong><br /><small
+                          ><img
+                            src="https://flagcdn.com/w40/fr.png"
+                            class="banderas"
+                            alt="Francia"
+                          />
+                          Francia</small
+                        ><br />
+                        <span style="color: gold">★★★★★</span>
+                      </div>
+                    </div>
+                    <p class="parrafoReseña">
+                      "Cada miembro del personal nos sorprendió con pequeños
+                      detalles todos los días. Un verdadero lujo."
+                    </p>
+                    <small>Publicado en enero 2025</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-md-4">
+                  <div class="review-card">
+                    <div class="d-flex-aling-items-center mb-2">
+                      <div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-person-square"
+                          viewBox="0 0 16 16"
+                        >
+                          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                          <path
+                            d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"
+                          />
+                        </svg>
+                        <strong>Valentina Rodriguez</strong><br /><small
+                          ><img
+                            src="https://flagcdn.com/w40/mx.png"
+                            class="banderas"
+                            alt="Mexico"
+                          />
+                          Mexico</small
+                        ><br />
+                        <span style="color: gold">★★★★★</span>
+                      </div>
+                    </div>
+                    <p class="parrafoReseña">
+                      "Un hotel que realmente entiende el significado de la
+                      palabra 'exclusividad'."
+                    </p>
+                    <small>Publicado en febrero 2025</small>
+                  </div>
+                </div>
+                <div class="col-md-4 d-none d-md-block">
+                  <div class="review-card">
+                    <div class="d-flex-aling-items-center mb-2">
+                      <div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-person-square"
+                          viewBox="0 0 16 16"
+                        >
+                          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                          <path
+                            d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"
+                          />
+                        </svg>
+                        <strong>Klaus Muller</strong><br /><small
+                          ><img
+                            src="https://flagcdn.com/w40/de.png"
+                            class="banderas"
+                            alt="Alemania"
+                          />
+                          Alemania</small
+                        ><br />
+                        <span style="color: gold">★★★★★</span>
+                      </div>
+                    </div>
+                    <p class="parrafoReseña">
+                      "El concierge organizó todas nuestras actividades con
+                      presición. Se nota la excelencia en cada rincón del
+                      hotel."
+                    </p>
+                    <small>Publicado en marzo 2025</small>
+                  </div>
+                </div>
+                <div class="col-md-4 d-none d-md-block">
+                  <div class="review-card">
+                    <div class="d-flex-aling-items-center mb-2">
+                      <div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-person-square"
+                          viewBox="0 0 16 16"
+                        >
+                          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                          <path
+                            d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"
+                          />
+                        </svg>
+                        <strong>Isabella Rossi</strong><br /><small
+                          ><img
+                            src="https://flagcdn.com/w40/it.png"
+                            class="banderas"
+                            alt="Italia"
+                          />
+                          Italia</small
+                        ><br />
+                        <span style="color: gold">★★★★★</span>
+                      </div>
+                    </div>
+                    <p class="parrafoReseña">
+                      "El servicio fue cálido y personalizado, la decoración
+                      elegante y el buffet ofrecia una cocina exquisita."
+                    </p>
+                    <small>Publicado en abril 2025</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carrucelReseñas"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carrucelReseñas"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <br />
+    <footer class="bg-dark text-white pt-4 pb-2 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <h5>Ubicación</h5>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1080.6334744653893!2d-66.34573996359256!3d-33.299624059256374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7accb26d5af87%3A0x23bdd050a35f7327!2sGRAN%20HOTEL%20SAN%20LUIS%20GOLD!5e0!3m2!1ses-419!2sar!4v1748892857797!5m2!1ses-419!2sar"
+              width="100%"
+              height="230"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <h5>Contacto</h5>
+            <form>
+              <div class="mb-2">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Tu nombre"
+                />
+              </div>
+              <div class="mb-2">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Tu correo"
+                />
+              </div>
+              <div class="mb-2">
+                <textarea
+                  class="form-control"
+                  rows="3"
+                  placeholder="Mensaje"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-outline-light">
+                Enviar
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col text-center">
+            <img
+              src="https://hsol.com.ar/pms/hotels/aguamansa/feedaguamansa-07.png"
+              alt="Logo"
+              style="max-height: 80px"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

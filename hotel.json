@@ -1,0 +1,94 @@
+[
+    {
+        "id": "1",
+        "nombre": "Habitación Imperial",
+        "capacidad": "individual",
+        "cama":"cama doble",
+        "medida":"20m²",
+        "detalleBreve":"",
+        "detalles": "Diseñada para el viajero que valora el confort, la privacidad y la excelencia en cada aspecto de su estadía, nuestra habitación individual de lujo ofrece una experiencia única dentro de un entorno sofisticado y exclusivo. Con una decoración moderna y refinada, la habitación combina materiales nobles, iluminación cálida y detalles cuidadosamente seleccionados para lograr un ambiente armonioso y acogedor. La cama individual de alta gama, con sábanas de algodón egipcio y selección de almohadas, garantiza un descanso reparador. El espacio cuenta con aire acondicionado de última generación con control individual, asegurando la temperatura ideal durante todo el año. El baño en suite, revestido en mármol, está equipado con ducha tipo lluvia, amenities de marca internacional, secador de cabello profesional y toallas de algodón premium. Para su comodidad y entretenimiento, la habitación ofrece Wi-Fi de alta velocidad sin cargo, Smart TV de pantalla plana con acceso a plataformas de streaming, escritorio de trabajo ergonómico, y una heladera minibar abastecida con bebidas y snacks gourmet. El balcón privado invita a disfrutar de vistas privilegiadas de la ciudad o el entorno natural, ofreciendo un rincón perfecto para relajarse con una taza de café o una copa de vino. Además, como huésped de nuestro hotel 5 estrellas, disfrutará de servicio a la habitación las 24 horas, limpieza diaria personalizada, y acceso a todos los servicios exclusivos del establecimiento: spa, gimnasio, piscina climatizada y restaurante gourmet."
+    },
+    {
+        "id":"2",
+        "nombre":"Habitacion Esencia",
+        "capacidad":"doble",
+        "cama":"Dos camas individuales",
+        "medida":"30m²",
+        "detalleBreve":"",
+        "detalles":"Nuestra habitación doble con dos camas individuales ha sido cuidadosamente diseñada para brindar el equilibrio perfecto entre comodidad, privacidad y estilo. Ideal para amigos, colegas de viaje o familiares que desean compartir un espacio sin renunciar al confort individual, esta elegante habitación ofrece una experiencia de hospedaje de alto nivel en un entorno sofisticado y funcional. El ambiente amplio y luminoso se presenta con una decoración contemporánea de líneas limpias, tonos cálidos y detalles de diseño que evocan lujo y tranquilidad. Cada cama individual está equipada con colchones premium, sábanas de algodón de alta calidad y una selección de almohadas que garantizan un descanso superior. La habitación cuenta con aire acondicionado con control personalizado, un baño en suite revestido en mármol con ducha tipo lluvia, amenities de lujo, batas, pantuflas y toallas de algodón suave. El espacio se complementa con una zona de trabajo funcional, iluminación regulable, y una Smart TV de pantalla plana con canales internacionales y plataformas de streaming. Los huéspedes también disponen de Wi-Fi de alta velocidad, heladera minibar con productos gourmet, caja fuerte digital, y un espacioso balcón privado, ideal para disfrutar del aire libre y vistas relajantes. Como parte de nuestra experiencia 5 estrellas, la habitación incluye servicio a la habitación 24/7, limpieza diaria personalizada, y acceso a todas las áreas del hotel: spa, piscina, bar y buffet gourmet."
+
+    },
+
+    {
+        "id":"3",
+        "nombre":"Habitacion Mediterránea",
+        "capacidad":"doble",
+        "cama":"Cama Matrimonial",
+        "medida":"30m²",
+        "detalleBreve":"",
+        "detalles":"Pensada para parejas o viajeros que buscan disfrutar de una estadía distinguida, nuestra habitación doble con cama matrimonial ofrece un entorno acogedor, refinado y equipado con todos los detalles que distinguen a un hotel de categoría cinco estrellas. El ambiente combina diseño contemporáneo y calidez, con materiales nobles, iluminación suave y una cuidada selección de mobiliario. La cama matrimonial tamaño king con colchón de alta gama, sábanas de algodón egipcio y menú de almohadas asegura un descanso profundo y reparador. La habitación está equipada con aire acondicionado con control individual, Wi-Fi de alta velocidad, Smart TV con acceso a servicios de streaming, y una heladera minibar con productos seleccionados. También incluye un escritorio de trabajo, armario amplio con caja de seguridad, y cortinas blackout para un mayor confort. El baño en suite, revestido en mármol, cuenta con ducha tipo lluvia, amenities premium, batas, pantuflas y toallas de lujo. Para momentos de relajación, el balcón privado ofrece un espacio íntimo con vistas a la ciudad, al jardín o al entorno natural del hotel. Los huéspedes disfrutan de servicio a la habitación disponible las 24 horas, limpieza diaria personalizada, y acceso exclusivo a todos los servicios del hotel: spa, piscina, buffet gourmet y más."
+
+
+    },
+
+    {
+        "id":"4",
+        "nombre":"Habitacion Cristal",
+        "cantidad":"triple",
+        "cama":"3 camas individuales",
+        "medida":"35m²",
+        "detalleBreve":"",
+        "detalles":"Ideal para grupos de amigos, familias o compañeros de viaje, nuestra habitación triple con tres camas individuales ofrece un equilibrio perfecto entre espacio, privacidad y elegancia, todo dentro del estándar de excelencia de un hotel cinco estrellas. Con un diseño moderno y funcional, el ambiente ha sido cuidadosamente decorado con detalles sofisticados, materiales de alta calidad y una atmósfera cálida que invita al descanso. Cada una de las tres camas individuales cuenta con colchones premium, sábanas de algodón de alta gama y una selección de almohadas para garantizar el confort personalizado de cada huésped. La habitación dispone de aire acondicionado con control individual, Wi-Fi de alta velocidad, y una Smart TV de pantalla plana con canales internacionales y acceso a plataformas de entretenimiento. También se incluye una heladera minibar con productos seleccionados, escritorio amplio, armario espacioso y caja fuerte digital. El baño en suite, moderno y luminoso, está equipado con ducha tipo lluvia, amenities de lujo, secador de cabello profesional, batas, pantuflas y toallas de algodón suave. Un balcón privado completa la experiencia, brindando un espacio relajante con vistas agradables, ideal para disfrutar al aire libre. Como parte de nuestros servicios de lujo, los huéspedes cuentan con servicio a la habitación 24 horas, limpieza diaria personalizada, y acceso completo a las instalaciones del hotel: spa, piscina, buffet gourmet y más."
+
+        
+    },
+
+    {
+        "id":"5",
+        "nombre":"Habitacion Brisa Moderna",
+        "cantidad":"triple",
+        "cama":"1 cama matrimonial y 1 individual",
+        "medida":"35m²",
+        "detalleBreve":"",
+        "detalles":"Perfecta para familias, amigos o grupos pequeños que buscan confort y estilo, nuestra habitación triple combina una cama matrimonial y una cama individual, ofreciendo un espacio amplio y refinado dentro del estándar exclusivo de un hotel 5 estrellas. El diseño combina modernidad y calidez, con detalles de alta calidad y una atmósfera acogedora. La cama matrimonial king size cuenta con colchón premium, sábanas de algodón egipcio y un menú de almohadas para un descanso inigualable, mientras que la cama individual ofrece el mismo confort y cuidado en el detalle. La habitación dispone de aire acondicionado con control individual, Wi-Fi de alta velocidad, Smart TV con acceso a plataformas de streaming, y una heladera minibar equipada con productos seleccionados. Además, incluye un espacio de trabajo funcional, armario amplio con caja fuerte digital, y cortinas blackout para garantizar un ambiente tranquilo. El baño en suite presenta acabados en mármol, ducha tipo lluvia, amenities de lujo, batas, pantuflas y toallas de alta calidad. Un balcón privado complementa el ambiente, ofreciendo un espacio íntimo para relajarse y disfrutar de las vistas. Los huéspedes cuentan con servicio a la habitación 24/7, limpieza diaria personalizada, y acceso a todas las instalaciones del hotel, que incluyen spa, piscina  y restaurante gourmet."
+    },
+
+    {
+    "id":"6",
+    "nombre":"Habitacion Brisa Serena",
+    "cantidad":"cuadruple",
+    "cama":"4 individuales",
+    "medida":"50m²",
+    "detalleBreve":"",
+    "detalles":"Diseñada para brindar la máxima comodidad y funcionalidad, nuestra habitación cuádruple con cuatro camas individuales es la opción ideal para familias numerosas, grupos de amigos o viajeros que desean compartir un espacio amplio sin sacrificar la privacidad y el estilo. El ambiente, decorado con elegancia y materiales de alta calidad, ofrece un espacio luminoso y acogedor donde cada una de las camas individuales cuenta con colchones premium, sábanas de algodón de alta gama y una selección de almohadas que garantizan un descanso personalizado y reparador. La habitación está equipada con aire acondicionado con control individual, Wi-Fi de alta velocidad, una Smart TV de pantalla plana con canales internacionales y acceso a plataformas de entretenimiento, y una heladera minibar surtida con productos seleccionados. Además, cuenta con un escritorio funcional, armario amplio con caja fuerte digital y cortinas blackout para un descanso sin interrupciones. El baño en suite presenta acabados en mármol, ducha tipo lluvia, amenities de lujo, batas, pantuflas y toallas de algodón suave, proporcionando una experiencia de confort y exclusividad. Un balcón privado ofrece un espacio al aire libre para relajarse y disfrutar de las vistas, completando la experiencia de hospedaje. Como huésped, tendrá acceso a servicios exclusivos como servicio a la habitación 24 horas, limpieza diaria personalizada, y todas las instalaciones del hotel: spa, gimnasio, piscina climatizada, restaurante gourmet y más."
+    },
+    {
+    "id":"7",
+    "nombre":"Habitacion Palacete",
+    "cantidad":"cuadruple",
+    "cama":"2 camas dobles",
+    "medida":"50m²",
+    "detalleBreve":"",
+    "detalles":"Pensada para familias, parejas amigas o grupos que viajan juntos, nuestra habitación cuádruple con dos camas dobles ofrece un equilibrio perfecto entre espacio, confort y diseño, todo dentro del nivel de excelencia de un hotel cinco estrellas. El ambiente, amplio y luminoso, presenta una decoración sofisticada con detalles modernos y materiales de alta calidad. Las dos camas dobles, equipadas con colchones premium, sábanas de algodón egipcio y un menú de almohadas, aseguran un descanso placentero para cada huésped. La habitación está climatizada con aire acondicionado de control individual y equipada con Wi-Fi de alta velocidad, Smart TV con acceso a plataformas de streaming, y una heladera minibar con productos seleccionados. También dispone de un área de trabajo funcional, armario espacioso con caja fuerte digital, y cortinas blackout para garantizar privacidad y tranquilidad durante la estadía. El baño en suite, elegante y cómodo, cuenta con ducha tipo lluvia, acabados en mármol, amenities de lujo, batas, pantuflas y toallas de algodón de alta calidad. Además, el balcón privado ofrece un rincón ideal para relajarse al aire libre y disfrutar de la vista, completando una experiencia pensada para el confort de todos los ocupantes. Como parte de nuestros servicios cinco estrellas, se incluye servicio a la habitación las 24 horas, limpieza diaria personalizada, y acceso libre a las instalaciones del hotel: spa, piscina, restaurante gourmet, y mucho más."
+    },
+    {
+    "id":"8",
+    "nombre":"Habitación Suite Royal Garden",
+    "cantidad":"suite",
+    "cama":"1 cama doble",
+    "medida":"60m²",
+    "detalleBreve":"",
+    "detalles":"Nuestra Suite Matrimonial representa la máxima expresión de elegancia, confort y privacidad. Diseñada especialmente para parejas que buscan vivir una experiencia inolvidable, esta suite combina un diseño refinado con servicios exclusivos propios de un hotel de categoría cinco estrellas. El espacio, amplio y cuidadosamente distribuido, incluye una cama king size con colchón premium, sábanas de algodón egipcio de alto gramaje y una selección personalizada de almohadas, asegurando un descanso inigualable. La decoración armoniza materiales nobles, detalles artísticos y una iluminación cálida que invita al relax y al disfrute. La suite cuenta con área de estar independiente, ideal para momentos de lectura, descanso o servicio a la habitación, además de un escritorio de trabajo y un balcón privado o terraza con vistas panorámicas, perfecto para compartir una copa o simplemente contemplar el entorno. El baño en suite de lujo, de diseño contemporáneo, está equipado con ducha tipo lluvia y bañera de hidromasaje, doble lavabo, amenities de alta gama, batas, pantuflas y toallas extra suaves. Entre sus comodidades tecnológicas, la suite incluye aire acondicionado con control digital, Wi-Fi de alta velocidad, Smart TV de pantalla plana con canales internacionales y acceso a streaming, heladera minibar gourmet, cafetera premium, caja fuerte electrónica y sistema de sonido ambiental. Los huéspedes disfrutan además de servicio de habitaciones las 24 horas, limpieza diaria personalizada, y acceso a todos los espacios del hotel: spa con tratamientos de autor y restaurante gourmet con propuestas de cocina internacional."
+    },
+    {
+    "id":"9",
+    "nombre":"Habitación Suite Terraza Real",
+    "cantidad":"suite",
+    "cama":"1 cama matrimonia, 4 camas individuales",
+    "medida":"70m²",
+    "detalleBreve":"",
+    "detalles":"Nuestra exclusiva Suite Familiar está especialmente diseñada para alojar cómodamente a familias numerosas o grupos que desean compartir su estadía sin renunciar a la privacidad, el estilo y el servicio de excelencia que caracteriza a un hotel cinco estrellas. Con una distribución espaciosa y funcional, esta suite combina elegancia contemporánea con detalles cálidos que invitan al descanso. Dispone de una cama matrimonial king size y cuatro camas individuales, todas equipadas con colchones de alta gama, sábanas de algodón egipcio y un menú de almohadas para garantizar un descanso perfecto a cada integrante del grupo. El ambiente cuenta con áreas independientes de descanso y estar, ideal para disfrutar tanto de la convivencia como de momentos de tranquilidad. La suite incluye también un balcón privado o terraza con vistas relajantes, perfecto para reuniones en familia o simplemente para disfrutar del aire libre. El baño en suite, amplio y elegante, está equipado con ducha tipo lluvia y bañera, doble lavabo, amenities de lujo, batas, pantuflas y toallas suaves de algodón. Algunos diseños pueden incluir baños adicionales o toilette para mayor comodidad del grupo. La suite también ofrece aire acondicionado con control individual, Wi-Fi de alta velocidad, Smart TV con servicios de streaming, heladera minibar con productos gourmet, cafetera premium, caja fuerte digital, amplios espacios de guardado y un escritorio de trabajo. Como parte de la experiencia cinco estrellas, los huéspedes disfrutan de servicio a la habitación 24 horas, limpieza diaria personalizada, y acceso completo a todas las instalaciones del hotel: spa, piscina, áreas de recreación, restaurante gourmet y actividades pensadas para toda la familia."    
+    }
+
+
+]
