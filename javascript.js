@@ -13,7 +13,7 @@ formulario.addEventListener("submit", function (e) {
     let mensaje = document.getElementById("mensaje").value;
     let errores = [];
 
-    if (nombre.length < 3) {
+    if (nombre.length < 3 || !/^[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+$/.test(nombre)) {
         errores.push("Ingrese un nombre válido");
     }
     if (!(email.endsWith(".com"))) {

@@ -107,7 +107,7 @@ fetch("hotel.json")
 
       let errores = [];
 
-      if (nombre.length < 3) errores.push("El nombre debe tener al menos 3 caracteres");
+      if (nombre.length < 3 || !/^[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+$/.test(nombre)) errores.push("El nombre debe tener al menos 3 caracteres");
       if (!email.includes("@") || !email.includes(".com")) errores.push("Ingrese un email válido");
       if (!telefono || !/^\d+$/.test(telefono)) errores.push("Ingrese un teléfono válido");
       if (!fechaIngVal) errores.push("Debe ingresar una fecha de ingreso");
