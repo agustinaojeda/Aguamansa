@@ -13,20 +13,24 @@ nav {
     /* Asegura que la barra de navegación esté siempre encima */
 }
 
+
 .logo {
     color: white;
     width: 20vh;
 }
 
+
 .logo img {
     height: 10vh;
 }
+
 
 .menu {
     display: grid;
     grid-template-columns: repeat(4, auto);
     gap: 30px;
 }
+
 
 .menu a {
     color: white;
@@ -36,9 +40,11 @@ nav {
     transition: color 0.3s;
 }
 
+
 .menu a:hover {
     color: #664609;
 }
+
 
 /* Botón hamburguesa (solo visible en móviles) */
 .hamburguesa {
@@ -47,6 +53,7 @@ nav {
     color: white;
     cursor: pointer;
 }
+
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -63,21 +70,26 @@ nav {
         border-top-left-radius: 0px;
     }
 
+
     .menu.mostrar {
         display: grid;
         grid-template-rows: auto;
         grid-template-columns: auto;
     }
 
+
     .hamburguesa {
         display: block;
 
+
     }
+
 
     .hamburguesa:hover {
         color: #664609;
     }
 }
+
 
 /*IMAGEN PRINCIPAL HOTEL*/
 .imagenPrincipal {
@@ -87,6 +99,7 @@ nav {
     padding-bottom: 0;
 }
 
+
 /*SECCION PROMO*/
 .imagenpromocolor {
     background-color: #ffffff;
@@ -94,25 +107,30 @@ nav {
     padding-top: 0;
 }
 
+
 .imagen-promo {
     width: 300px;
     height: 250px;
 }
+
 
 /*SECCION RESEÑA*/
 .carrucelcolor {
     background-color: #ffffff;
 }
 
+
 .texto {
     text-align: center;
     font-family: 'Segoe UI';
 }
 
+
 #carrucelReseñas {
     max-width: 1000px;
     margin: 0 auto;
 }
+
 
 .review-card {
     border: 1px solid #ddd;
@@ -122,6 +140,7 @@ nav {
     height: 100%;
 }
 
+
 .review-avatar {
     width: 40px;
     height: 40px;
@@ -130,10 +149,12 @@ nav {
     margin-right: 10px;
 }
 
+
 .parrafoReseña {
     font-family: 'Segoe UI';
     font-size: 14;
 }
+
 
 .banderas {
     vertical-align: middle;
@@ -141,24 +162,29 @@ nav {
     height: auto;
 }
 
+
 /*.footer{
     background-color: #e27c2e;
     padding: 100px;
 }*/
+
 
 /*HABITACIONES*/
 html {
     font-family: 'Montserrat';
 }
 
+
 * {
     box-sizing: border-box;
 }
+
 
 body {
     margin: 0;
     background-color: #ffffff;
 }
+
 
 /*SECCION INTRO*/
 .intro {
@@ -169,9 +195,10 @@ body {
     text-align: center;
     background-color: #fff6e8;
     border-radius: 10px;
-    max-width: 800px;
+    max-width: 1300px;
     margin-top: 20px;
 }
+
 
 .filtros {
     margin-top: 20px;
@@ -182,6 +209,7 @@ body {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
+
 .form-filtro {
     display: flex;
     gap: 20px;
@@ -190,25 +218,26 @@ body {
     flex-wrap: wrap;
 }
 
+
 /*SECCION HABITACIONES*/
 .container1 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 100px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 60px;
+    padding: 50px;
     transition: transform 0.3s ease;
 }
 
+
 .card {
     background-color: #fff5e9;
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: transform 0.3s ease;
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 60px;
 }
+
 
 .card img {
     width: 100%;
@@ -218,15 +247,18 @@ body {
     transition: transform 0.4s ease;
 }
 
+
 .card:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transform: scale(1.03);
 }
 
-a {
+
+ .container1 a {
     text-decoration: none;
     color: black;
 }
+
 
 /*HABITACION DETALLE*/
 .enlace:hover {
@@ -234,11 +266,13 @@ a {
     transition: filter 0.3s ease;
 }
 
+
 /*SECCION*/
 .carrusel {
     margin-top: 0;
     margin-bottom: 2vh;
 }
+
 
 .carrusel-img {
     height: 20%;
@@ -249,6 +283,8 @@ a {
 }
 
 
+
+
 /*SERVICIOS*/
 /*SECCION TEXTO Y CARRUCEL*/
 .titulo {
@@ -256,25 +292,31 @@ a {
     font-family: 'Segoe UI';
 }
 
+
 .sectionservi {
     background-color: #ffffff;
 }
+
 
 .spatexto {
     font-family: 'Franklin Gothic Medium';
     font-size: 16;
 }
 
+
 .movil {
     display: none;
 }
+
 
 @media (max-width: 720px) {
     .escritorio {
         display: none;
     }
 
+
     .movil {
         display: block;
     }
 }
+
