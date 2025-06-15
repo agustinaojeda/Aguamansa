@@ -18,22 +18,20 @@ fetch("hotel.json")
 
     const imagenes = [
       habitacion.imagen1,
-      habitacion.imagen1 + "&1",
-      habitacion.imagen1 + "&2",
+      habitacion.imagen2 + "&1",
+      habitacion.imagen3 + "&2",
     ];
 
+    //Carrusel
     document.getElementById("carouselContainer").innerHTML = `
         <div id="carouselHotel" class="carousel slide carrusel" data-bs-ride="carousel">
           <div class="carousel-inner">
-            ${imagenes
-        .map(
-          (img, i) => `
+            ${imagenes.map((img, i) => `
               <div class="carousel-item ${i === 0 ? "active" : ""}">
-                <img src="${img}" class="d-block carrusel-img mx-auto" alt="Habitación ${i + 1}" />
+                <img src="${img}" class="d-block carrusel-img1 mx-auto" alt="Habitación ${i + 1}" />
               </div>
             `
-        )
-        .join("")}
+    ).join("")}
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselHotel" data-bs-slide="prev">
             <div class="carousel-control-prev-icon" aria-hidden="true"></div>
@@ -50,6 +48,7 @@ fetch("hotel.json")
               <h1 class="titulo">${habitacion.nombre}</h1>
             </div>
           </div>
+          <!--Detalle-->
           <div class="row justify-content-center">
             <div class="col-sm-6">
               <p>${habitacion.detalles}</p>
@@ -58,6 +57,8 @@ fetch("hotel.json")
               <p><strong>Medida:</strong> ${habitacion.medida}</p>
             </div>
             <div class="col-sm-1"></div>
+
+            <!--Formulario-->
             <div class="col-sm-5">
               <h5>¿Te interesa? Consultá si está disponible</h5>
               <form id="formulario">
@@ -93,6 +94,7 @@ fetch("hotel.json")
           </div>
         `;
 
+    //Validacion formulario
     const formularioH = document.getElementById("formulario");
 
     formularioH.addEventListener("submit", function (e) {

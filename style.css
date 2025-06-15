@@ -55,7 +55,7 @@ nav {
 }
 
 
-/* Responsive */
+/* Responsive menu*/
 @media (max-width: 768px) {
     .menu {
         display: none;
@@ -90,6 +90,7 @@ nav {
     }
 }
 
+/*-------INDEX---------*/
 
 /*IMAGEN PRINCIPAL HOTEL*/
 .imagenPrincipal {
@@ -163,28 +164,7 @@ nav {
 }
 
 
-/*.footer{
-    background-color: #e27c2e;
-    padding: 100px;
-}*/
-
-
-/*HABITACIONES*/
-html {
-    font-family: 'Montserrat';
-}
-
-
-* {
-    box-sizing: border-box;
-}
-
-
-body {
-    margin: 0;
-    background-color: #ffffff;
-}
-
+/*-------HABITACIONES--------*/
 
 /*SECCION INTRO*/
 .intro {
@@ -199,7 +179,7 @@ body {
     margin-top: 20px;
 }
 
-
+/*Filtros*/
 .filtros {
     margin-top: 20px;
     margin-bottom: -30px;
@@ -235,7 +215,7 @@ body {
     transition: transform 0.3s ease;
     max-width: 80%;
     margin: auto;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
 
@@ -254,18 +234,13 @@ body {
 }
 
 
- .container1 a {
+.container1 a {
     text-decoration: none;
     color: black;
 }
 
 
-/*HABITACION DETALLE*/
-.enlace:hover {
-    filter: brightness(0.9) !important;
-    transition: filter 0.3s ease;
-}
-
+/*-----HABITACION DETALLE-------*/
 
 /*SECCION*/
 .carrusel {
@@ -273,20 +248,17 @@ body {
     margin-bottom: 2vh;
 }
 
-
-.carrusel-img {
-    height: 20%;
+.carrusel-img1 {
     width: 100%;
-    max-width: 100%;
+    height: 600px;
     object-fit: cover;
     object-position: center;
 }
 
 
+/*-------SERVICIOS----------*/
 
-
-/*SERVICIOS*/
-/*SECCION TEXTO Y CARRUCEL*/
+/*SECCION TEXTO Y CARRUSEL*/
 .titulo {
     text-align: left;
     font-family: 'Segoe UI';
@@ -319,4 +291,3 @@ body {
         display: block;
     }
 }
-
