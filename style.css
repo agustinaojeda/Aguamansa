@@ -1,3 +1,7 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /*BARRA DE NAVEGACION*/
 nav {
     position: fixed;
