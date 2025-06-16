@@ -11,101 +11,58 @@ fetch("hotel.json")
     const habitacion = habs.find((h) => h.id === id);
 
     if (!habitacion) {
-      document.body.innerHTML =
-        "<p class='text-center text-danger mt-5'>Habitación no encontrada</p>";
+      document.getElementById("carouselContainer").innerHTML = "";
+      document.getElementById("infoContainer").style.display = "none";
+      document.body.insertAdjacentHTML("beforeend", `
+        <p class='text-center text-danger mt-5'>Habitación no encontrada</p>
+      `);
       return;
     }
 
+    //Carrusel
     const imagenes = [
       habitacion.imagen1,
       habitacion.imagen2 + "&1",
       habitacion.imagen3 + "&2",
     ];
 
-    //Carrusel
-    document.getElementById("carouselContainer").innerHTML = `
-        <div id="carouselHotel" class="carousel slide carrusel" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            ${imagenes.map((img, i) => `
-              <div class="carousel-item ${i === 0 ? "active" : ""}">
-                <img src="${img}" class="d-block carrusel-img1 mx-auto" alt="Habitación ${i + 1}" />
-              </div>
-            `
-    ).join("")}
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselHotel" data-bs-slide="prev">
-            <div class="carousel-control-prev-icon" aria-hidden="true"></div>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselHotel" data-bs-slide="next">
-            <div class="carousel-control-next-icon" aria-hidden="true"></div>
-          </button>
-        </div>
-        `;
+    let html = "";
 
-    document.getElementById("infoContainer").innerHTML = `
-          <div class="row">
-            <div class="col-12">
-              <h1 class="titulo">${habitacion.nombre}</h1>
-            </div>
-          </div>
-          <!--Detalle-->
-          <div class="row justify-content-center">
-            <div class="col-sm-6">
-              <p>${habitacion.detalles}</p>
-              <p><strong>Capacidad:</strong> ${habitacion.capacidad || habitacion.cantidad}</p>
-              <p><strong>Cama:</strong> ${habitacion.cama}</p>
-              <p><strong>Medida:</strong> ${habitacion.medida}</p>
-            </div>
-            <div class="col-sm-1"></div>
+    for (let i = 0; i < imagenes.length; i++) {
+      let img = imagenes[i];
+      let activeClass = i === 0 ? "active" : "";
 
-            <!--Formulario-->
-            <div class="col-sm-5">
-              <h5>¿Te interesa? Consultá si está disponible</h5>
-              <form id="formulario">
-                <div class="mb-3">
-                  <label for="nombre" class="form-label">Nombre y apellido</label>
-                  <input type="text" class="form-control" id="nombre" required minlength="3" maxlength="40" />
-                </div>
-                <div class="mb-3">
-                  <label for="email" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="email" required />
-                </div>
-                <div class="mb-3">
-                  <label for="telefono" class="form-label">Teléfono</label>
-                  <input type="tel" class="form-control" id="telefono" required minlength="10" />
-                </div>
-                <div class="mb-3">
-                  <label for="fechaIng" class="form-label">Fecha de ingreso</label>
-                  <input type="date" class="form-control" id="fechaIng" min="2025-06-12" required />
-                </div>
-                <div class="mb-3">
-                  <label for="fechaEgr" class="form-label">Fecha de egreso</label>
-                  <input type="date" class="form-control" id="fechaEgr" max="2026-06-12" required />
-                </div>
-                <div class="mb-3">
-                  <label for="huespedes" class="form-label">Cantidad de huéspedes</label>
-                  <input type="number" min="1" max="10" class="form-control" id="huespedes" required />
-                </div>
-                <div class="text-end">
-                  <button type="submit" class="btn btn-dark">Consultar disponibilidad</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        `;
+      html += `
+    <div class="carousel-item ${activeClass}">
+      <img src="${img}" class="d-block carrusel-img1 mx-auto"  />
+    </div>
+  `;
+    }
 
-    //Validacion formulario
+    document.getElementById("carouselInner").innerHTML = html;
+
+
+    // Detalle de la habitacion
+    document.getElementById("tituloHabitacion").innerText = habitacion.nombre;
+    document.getElementById("infoHabitacion").innerHTML = `
+      <p>${habitacion.detalles}</p>
+      <p><strong>Capacidad:</strong> ${habitacion.capacidad || habitacion.cantidad}</p>
+      <p><strong>Cama:</strong> ${habitacion.cama}</p>
+      <p><strong>Medida:</strong> ${habitacion.medida}</p>
+    `;
+
+    // Validación del formulario 
     const formularioH = document.getElementById("formulario");
 
     formularioH.addEventListener("submit", function (e) {
       e.preventDefault();
 
-      const nombre = document.getElementById("nombre").value.trim();
-      const email = document.getElementById("email").value.trim();
-      const telefono = document.getElementById("telefono").value.trim();
-      const fechaIngVal = document.getElementById("fechaIng").value;
-      const fechaEgrVal = document.getElementById("fechaEgr").value;
-      const huespedes = document.getElementById("huespedes").value;
+      let nombre = document.getElementById("nombre").value.trim();
+      let email = document.getElementById("email").value.trim();
+      let telefono = document.getElementById("telefono").value.trim();
+      let fechaIngVal = document.getElementById("fechaIng").value;
+      let fechaEgrVal = document.getElementById("fechaEgr").value;
+      let huespedes = document.getElementById("huespedes").value;
 
       let errores = [];
 
@@ -116,8 +73,8 @@ fetch("hotel.json")
       if (!fechaEgrVal) errores.push("Debe ingresar una fecha de egreso");
 
       if (fechaIngVal && fechaEgrVal) {
-        const fechaIng = new Date(fechaIngVal);
-        const fechaEgr = new Date(fechaEgrVal);
+        let fechaIng = new Date(fechaIngVal);
+        let fechaEgr = new Date(fechaEgrVal);
         if (fechaIng >= fechaEgr) errores.push("La fecha de egreso debe ser posterior a la fecha de ingreso");
       }
 
@@ -130,8 +87,8 @@ fetch("hotel.json")
       } else {
         alert(`¡Gracias, ${nombre}! Te contactaremos pronto al ${telefono} o al correo ${email}.`);
         formularioH.reset();
-
       }
     });
   });
+
 

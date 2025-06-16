@@ -39,11 +39,117 @@
       </div>
     </nav>
 
-    <!--CARRUSEL-->
-    <div id="carouselContainer"></div>
+    <!-- Carrusel -->
+    <div id="carouselContainer">
+      <div
+        id="carouselHotel"
+        class="carousel slide carrusel"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner" id="carouselInner">
+          <!--Imagenes (se cargan en el js)-->
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselHotel"
+          data-bs-slide="prev"
+        >
+          <div class="carousel-control-prev-icon" aria-hidden="true"></div>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselHotel"
+          data-bs-slide="next"
+        >
+          <div class="carousel-control-next-icon" aria-hidden="true"></div>
+        </button>
+      </div>
+    </div>
 
-    <!--Detalle y formulario-->
-    <div class="container detalleContainer mt-5" id="infoContainer"></div>
+    <!-- Detalle -->
+    <div class="container detalleContainer mt-5" id="infoContainer">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="titulo" id="tituloHabitacion"></h1>
+        </div>
+      </div>
+
+      <!--Formulario-->
+      <div class="row justify-content-center">
+        <div class="col-sm-6" id="infoHabitacion"></div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-5">
+          <h5>¿Te interesa? Consultá si está disponible</h5>
+          <form id="formulario">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre y apellido</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nombre"
+                required
+                minlength="3"
+                maxlength="40"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required />
+            </div>
+            <div class="mb-3">
+              <label for="telefono" class="form-label">Teléfono</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="telefono"
+                required
+                minlength="7"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="fechaIng" class="form-label">Fecha de ingreso</label>
+              <input
+                type="date"
+                class="form-control"
+                id="fechaIng"
+                min="2025-06-19"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="fechaEgr" class="form-label">Fecha de egreso</label>
+              <input
+                type="date"
+                class="form-control"
+                id="fechaEgr"
+                max="2026-06-19"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="huespedes" class="form-label"
+                >Cantidad de huéspedes</label
+              >
+              <input
+                type="number"
+                min="1"
+                max="10"
+                class="form-control"
+                id="huespedes"
+                required
+              />
+            </div>
+            <div class="text-end">
+              <button type="submit" class="btn btn-dark">
+                Consultar disponibilidad
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <!--Footer-->
     <footer class="bg-dark text-white pt-4 pb-2 mt-5">
