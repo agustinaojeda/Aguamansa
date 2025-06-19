@@ -46,7 +46,7 @@ fetch("hotel.json")
     document.getElementById("tituloHabitacion").innerText = habitacion.nombre;
     document.getElementById("infoHabitacion").innerHTML = `
       <p>${habitacion.detalles}</p>
-      <p><strong>Capacidad:</strong> ${habitacion.capacidad || habitacion.cantidad}</p>
+      <p><strong>Capacidad:</strong> ${habitacion.capacidad}</p>
       <p><strong>Cama:</strong> ${habitacion.cama}</p>
       <p><strong>Medida:</strong> ${habitacion.medida}</p>
     `;
@@ -66,7 +66,7 @@ fetch("hotel.json")
 
       let errores = [];
 
-      if (nombre.length < 3 || !/^[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+$/.test(nombre)) errores.push("El nombre debe tener al menos 3 caracteres");
+      if (nombre.length < 3 || !/^[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+$/.test(nombre)) errores.push("Ingrese un nombre válido");
       if (!email.includes("@") || !email.includes(".com")) errores.push("Ingrese un email válido");
       if (!telefono || !/^\d+$/.test(telefono)) errores.push("Ingrese un teléfono válido");
       if (!fechaIngVal) errores.push("Debe ingresar una fecha de ingreso");
