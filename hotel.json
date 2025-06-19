@@ -12,7 +12,7 @@
   },
   {
     "id": "2",
-    "nombre": "Habitacion Esencia",
+    "nombre": "Habitación Esencia",
     "capacidad": "doble",
     "cama": "Dos camas individuales",
     "medida": "30m²",
@@ -24,7 +24,7 @@
 
   {
     "id": "3",
-    "nombre": "Habitacion Mediterránea",
+    "nombre": "Habitación Mediterránea",
     "capacidad": "doble",
     "cama": "Cama Matrimonial",
     "medida": "30m²",
@@ -36,7 +36,7 @@
 
   {
     "id": "4",
-    "nombre": "Habitacion Cristal",
+    "nombre": "Habitación Cristal",
     "cantidad": "triple",
     "cama": "3 camas individuales",
     "medida": "35m²",
@@ -48,7 +48,7 @@
 
   {
     "id": "5",
-    "nombre": "Habitacion Brisa Moderna",
+    "nombre": "Habitación Brisa Moderna",
     "cantidad": "triple",
     "cama": "1 cama matrimonial y 1 individual",
     "medida": "35m²",
@@ -60,7 +60,7 @@
 
   {
     "id": "6",
-    "nombre": "Habitacion Brisa Serena",
+    "nombre": "Habitación Brisa Serena",
     "cantidad": "cuadruple",
     "cama": "4 individuales",
     "medida": "50m²",
@@ -71,7 +71,7 @@
   },
   {
     "id": "7",
-    "nombre": "Habitacion Palacete",
+    "nombre": "Habitación Palacete",
     "cantidad": "cuadruple",
     "cama": "2 camas dobles",
     "medida": "50m²",
