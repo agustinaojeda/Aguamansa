@@ -19,7 +19,7 @@ formulario.addEventListener("submit", function (e) {
     if (!(email.endsWith(".com"))) {
         errores.push("Ingrese un email válido");
     }
-    if (!mensaje) {
+    if (mensaje.length < 5) {
         errores.push("Ingrese un mensaje");
     }
 

@@ -1,8 +1,3 @@
-function toggleMenu() {
-  let menu = document.getElementById("menu");
-  menu.classList.toggle("mostrar");
-}
-
 const id = new URLSearchParams(window.location.search).get("id");
 
 fetch("hotel.json")
